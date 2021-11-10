@@ -8,7 +8,6 @@ void StrOperations()
 	cout<<obj.RevString()<<endl;
 }
 
-
 void Array()
 {
 	ArrClass array(1);
