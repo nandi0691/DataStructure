@@ -2,12 +2,15 @@ EXE=exe
 TARGET: $(EXE)
 CC=g++
 RM=rm
-exe: ArrClass.o
-	$(CC) ArrClass.o -o $(EXE)
+exe: Appl.o StringOp.o
+	$(CC) Appl.o StringOp.o -o $(EXE)
 
-ArrClass.o: ArrClass.cpp
-	$(CC) -c ArrClass.cpp -o ArrClass.o
+Appl.o: Appl.cpp
+	$(CC) -c Appl.cpp -o Appl.o
+
+StringOp.o: StringOp.cpp
+	$(CC) -c StringOp.cpp -o StringOp.o
 
 clean:
-	$(RM) ArrClass.o $(EXE)
+	$(RM) Appl.o StringOp.o $(EXE)
 
