@@ -18,6 +18,7 @@ class MyStr{
 	public:
 		string RevString();
 		unsigned int StrLength();
+		string RevStr(const char * str);
 		string GetString()
 		{
 			return s;

@@ -29,5 +29,20 @@ string MyStr::RevString()
 		temp[len-i-1] = s[i];
 	}
 
-	return temp;
+	//return temp;
+	//Another approach is to use recursion
+	return RevStr(s.c_str());
+}
+
+string MyStr::RevStr(const char * str)
+{
+	static int index  = 0;
+	static char rev[100];
+
+	if(*str)
+	{
+		RevStr(str+1);
+		rev[index++]=*str;
+	}
+	return rev;
 }

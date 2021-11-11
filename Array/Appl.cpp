@@ -8,6 +8,7 @@ void StrOperations()
 	cout<<obj.RevString()<<endl;
 }
 
+
 void Array()
 {
 	ArrClass array(1);
@@ -37,9 +38,33 @@ void Array()
 		array2.pop();
 }
 
+void MergeSortedArray(int arr1[],int arr2[])
+{
+	if(!arr1 || !arr2)
+	{
+		cout<<"the array is empty"<<endl;	
+		return;
+	}
+	cout<<sizeof(arr1)<<endl;
+	int n1 = sizeof(arr1)/sizeof(arr1[0]);
+	int n2 = sizeof(arr2)/sizeof(int);
+	cout<<"size is "<<n1<<"\t"<<n2<<endl;
+	int arr[n1+n2];
+	for(int i =0;i<n1;i++)
+		arr[i]=arr1[2];
+
+	for(int i=0;i<n2;i++)
+		arr[n1+i]=arr2[i];
+
+	for(int i =0;i<(n1+n2);i++)
+		cout<<arr[i]<<endl;
+}
 int main()
 {
 	StrOperations();
-	Array();
+	//Array();
+	int arr[5]={1,2,3,4,5};
+	int arr2[6]={1,2};
+	//MergeSortedArray(arr,arr2);
 	return 0;
 }
