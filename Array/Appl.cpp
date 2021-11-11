@@ -2,6 +2,7 @@
 #include "StringOp.h"
 #include "MergeSortedArray.h"
 #include "TwoSum.h"
+#include "SubArraySum.h"
 
 
 void StrOperations()
@@ -46,6 +47,7 @@ int main()
 	//StrOperations();
 	//Array();
 	//MergeSortedArray();
-	twosum();
+	SubArraySum();
+	//twosum();
 	return 0;
 }
