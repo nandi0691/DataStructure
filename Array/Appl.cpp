@@ -3,7 +3,7 @@
 #include "MergeSortedArray.h"
 #include "TwoSum.h"
 #include "SubArraySum.h"
-
+#include "MoveZeroes.h"
 
 void StrOperations()
 {
@@ -47,7 +47,8 @@ int main()
 	//StrOperations();
 	//Array();
 	//MergeSortedArray();
-	SubArraySum();
+	//SubArraySum();
+	MoveZeroes();
 	//twosum();
 	return 0;
 }
