@@ -7,7 +7,7 @@
  * ....
  * Func(args...);
  * }
- * Below is the program for printing n natural numbers
+ * Below is the program for printing n numbers 
  * */
 
 void TailRec(int n)
