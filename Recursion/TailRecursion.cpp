@@ -1,26 +1,26 @@
-#include "HeadRecursion.h"
+#include "TailRecursion.h"
 /*
  * In this case we will call function at the beginning
  * Func(args...)
  * {
+ * ....
+ * ....
  * Func(args...);
- * ....
- * ....
  * }
  * Below is the program for printing n natural numbers
  * */
 
-void HeadRec(int n)
+void TailRec(int n)
 {
 	if(n>0)
 	{
-		HeadRec(n-1);
 		cout<<"Value is "<<n<<endl;
+		TailRec(n-1);
 	}
 }
 
-void HeadRecursion()
+void TailRecursion()
 {
-	HeadRec(6);
+	TailRec(6);
 	return;
 }
